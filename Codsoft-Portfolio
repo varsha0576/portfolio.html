@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varshita's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .left {
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgb(224, 224, 224);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(52, 6, 67);
+            height: 80px;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(203, 220, 138);
+        }
+        
+        nav ul li a:hover {
+            color: rgb(67, 100, 43);
+            font-size: 1.05rem;
+        }
+        
+        main hr {
+            border: 0;
+            background-color: #c06666;
+            height: 1.5px;
+            margin: 60px 84px;
+        }
+        
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+        
+        .firstsection>div {
+            width: 45%;
+            margin: 10px 0;
+        }
+        
+        .leftSection {
+            font-size: 2.5rem;
+        }
+        
+        .rightSection img {
+            width: 80%;
+        }
+        
+        .msger {
+            color: rgba(81, 164, 174, 0.955);
+            font-weight: 550;
+            font-size: 2.75rem;
+            padding-left: 2px;
+            font-style;
+            
+        }
+        
+        #element {
+            color: rgba(94, 41, 62, 0.955);
+            font-weight: 600;
+            font-size: 3rem;
+            padding-left: 2px;
+        }
+        
+        .SecondSection {
+            max-width: 80vw;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .about_heading {
+            color: rgba(224, 124, 43, 0.955);
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin: auto;
+        }
+        
+        .about_discription {
+            color: rgb(23, 144, 73);
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        .ThirdSection {
+            max-width: 80vw;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .skills_heading {
+            color: rgba(235, 14, 14, 0.955);
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin: auto;
+        }
+        
+        .info {
+            color: #d980d9;
+            width: 80%;
+            border-radius: 2px;
+        }
+        
+        #skills {
+            padding: 30px 0;
+            background-image: url(my.jpeg);
+            background-repeat: no-repeat;
+            background-position: right 150px;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .bars-box {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+        }
+        
+        .bars-box h3,
+        span {
+            padding-left: 30px;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+        .light-bar {
+            padding-left: 40px;
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            right: 100px;
+            width: 90%;
+            height: 0.6rem;
+            background: #08d8df;
+            border-radius: 0.4rem;
+        }
+        
+        .percent-bar {
+            position: absolute;
+            width: 100;
+            bottom: 0;
+            left: 0;
+            height: 0.6rem;
+            background: rgba(25, 45, 9, 0.955);
+            border-radius: 0.6rem;
+        }
+        
+        .html-bar {
+            width: 100%;
+        }
+        
+        .css-bar {
+            width: 100%;
+        }
+        
+        .js-bar {
+            width: 80%;
+        }
+        
+        .c-bar {
+            width: 95%;
+        }
+        
+        .python-bar {
+            width: 95%;
+        }
+        
+        .pro-bar {
+            width: 85%;
+        }
+        
+        .FourthSection {
+            max-width: 80vw;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .contact_heading {
+            color: rgba(150, 184, 13, 0.222);
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .mail {
+            background-image: url(mail.png);
+            height: 30px;
+            width: 20px;
+        }
+        
+        .resouces {
+            margin: 5px;
+        }
+        
+        .icon {
+            margin-right: 20px;
+            margin-left: 50px;
+            display: flex;
+            margin-top: 30px;
+            height: 30px;
+            text-align: center;
+        }
+        
+        .copyRight {
+            background-color: rgba(2, 11, 64, 0);
+            align-items: center;
+            display: flex;
+            text-align: center;
+            color: #edeff3c9;
+        }
+    </style>
+</head>
+
+<body background="https://img6.arthub.ai/64e10548-65c1.webp">
+    <header>
+        <nav>
+            <div class="left">Varshita's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftSection">
+                <div> Hello! I'm<br><span class="msger"><b>Kintali Varshita</b></span> and I'm a passionate<br>
+                    <span id="element"></span>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img align="right" src="girl.png" height="350" width="450" alt="working woman">
+            </div>
+        </section>
+        <hr>
+        <section class="SecondSection">
+            <h1 class="about_heading">About</h1>
+            <p class="about_discription"><span class="info">Hello! I'm <b>Kintali Varshita</b> 
+                from Rajahmundry,Andhra Pradesh. A passionate Computer Science and Engineering student
+                 at Pragati Engineering College with a strong foundation in C, Python, HTML, CSS, JavaScript, SQL.</p>
+        </section>
+        <hr>
+        <section class="ThirdSection">
+            <h1 class="skills_heading">  Skills  </h1>
+            <div class="skills" id="skills">
+                <div class="skills-container">
+                    <div class="bars">
+                        <div class="bars-box">
+                            <h3>HTML</h3>
+                            <span>100%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar html-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>100%</span>
+                    <div class="light-bar">
+                    </div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>JAVASCRIPT</h3>
+                    <span>80%</span>
+                    <div class="light-bar">
+                    </div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>C</h3>
+                    <span>95%</span>
+                    <div class="light-bar">
+                    </div>
+                    <div class="percent-bar c-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Python</h3>
+                    <span>95%</span>
+                    <div class="light-bar">
+                    </div>
+                    <div class="percent-bar python-bar"></div>
+                </div>
+
+        </section>
+        <hr>
+        <section class="FourthSection"></section>
+        <h1 class="contact_heading">Contact Me</h1>
+        <div class="">
+            <div class="resouces d-flex flex-row justify-content-center">
+                <p><i class=" icon fa-solid fa-envelopes-bulk" style="color: #1b55ca; "></i>varshitachinu@gmail.com</p>
+                <p><i class=" icon fa-solid fa-mobile" style="color: #1bd818;"></i>709325***</p>
+                <p><i class=" icon fa-brands fa-linkedin" style="color: #1a1a1b;"></i>Kintalisvar*****</p>
+            </div>
+            <div class="resouces">
+                <p><i class="icon fa-brands fa-github" style="color: #23044d;"></i>Varshita***01</p>
+                <p><i class="icon fa-brands fa-instagram" style="color: #364667;"></i>vara****</p>
+                <p><i class="icon fa-brands fa-facebook" style="color: #2361db;"></i>varshita1****</p>
+            </div>
+        </div>
+        <hr>
+        <section class="copyRight">
+            <p><i class="icon fa-solid fa-copyright" style="color: #574721;"></i>all rights reserved to Kintali Varshita</p>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Tech Enthusiast', 'Photographer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/b02d5822ed.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
